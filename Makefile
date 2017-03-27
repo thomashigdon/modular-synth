@@ -1,6 +1,6 @@
 CC=g++
-CPPFLAGS=-g -Wall 
-LDFLAGS = -ljackcpp -ljack -lrt -lpthread
+CPPFLAGS=-g -Wall -Ijackcpp/include
+LDFLAGS = -Ljackcpp -ljackcpp -ljack -lrt -lpthread
 OBJS = main.o \
  Adder.o \
  Attenuator.o \

@@ -7,8 +7,7 @@ class JackOut: public JackCpp::AudioIO
   public:
     virtual int audioCallback(jack_nframes_t nframes,
                               audioBufVector inBufs,
-                              audioBufVector outBufs,
-                              midiBufVector midiBufs);
+                              audioBufVector outBufs);
 
     JackOut(Synth* synth);
     ~JackOut();

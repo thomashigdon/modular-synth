@@ -8,8 +8,7 @@ using namespace std;
 
 int JackOut::audioCallback(jack_nframes_t nframes,
         audioBufVector inBufs,
-        audioBufVector outBufs,
-        midiBufVector)
+        audioBufVector outBufs)
 {
   mpSynth->Run(outBufs, nframes);
   //return 0 on success

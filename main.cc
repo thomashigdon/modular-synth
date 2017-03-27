@@ -5,6 +5,7 @@
 #include "Attenuator.hh"
 #include "JackOut.hh"
 #include <vector>
+#include <unistd.h>
 
 using namespace std;
 

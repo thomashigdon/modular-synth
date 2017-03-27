@@ -14,8 +14,13 @@ OBJS = main.o \
 
 all: synth
 
-synth: $(OBJS)
+synth: $(OBJS) jackcpp
 	$(CC) -o $@ $(OBJS) $(LDFLAGS)
+
+jackcpp:
+	cd jackcpp && $(MAKE)
+
+.PHONY: jackcpp
 
 clean:
 	rm -f main \
